@@ -11,15 +11,19 @@
 		C90ED49B22A1138C00F0D2F3 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90ED49A22A1138C00F0D2F3 /* RootViewController.swift */; };
 		C90ED49D22A1138C00F0D2F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C90ED49C22A1138C00F0D2F3 /* Assets.xcassets */; };
 		C90ED4A022A1138C00F0D2F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C90ED49E22A1138C00F0D2F3 /* LaunchScreen.storyboard */; };
+		E952AC189BBD78D3D0330C94 /* Pods_TinyInsta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C431FD9F7B93A0A242F5B7D6 /* Pods_TinyInsta.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1DEBD7805F26AAB8493587F3 /* Pods-TinyInsta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinyInsta.release.xcconfig"; path = "Target Support Files/Pods-TinyInsta/Pods-TinyInsta.release.xcconfig"; sourceTree = "<group>"; };
+		C431FD9F7B93A0A242F5B7D6 /* Pods_TinyInsta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TinyInsta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C90ED49522A1138C00F0D2F3 /* TinyInsta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinyInsta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C90ED49822A1138C00F0D2F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C90ED49A22A1138C00F0D2F3 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		C90ED49C22A1138C00F0D2F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C90ED49F22A1138C00F0D2F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C90ED4A122A1138C00F0D2F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC1EEF9526F659D8E5E8AE2D /* Pods-TinyInsta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinyInsta.debug.xcconfig"; path = "Target Support Files/Pods-TinyInsta/Pods-TinyInsta.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +31,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E952AC189BBD78D3D0330C94 /* Pods_TinyInsta.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		158FA94340CCA2F52178FA47 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DC1EEF9526F659D8E5E8AE2D /* Pods-TinyInsta.debug.xcconfig */,
+				1DEBD7805F26AAB8493587F3 /* Pods-TinyInsta.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		2608131D9D6E423BDF6E5BEB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C431FD9F7B93A0A242F5B7D6 /* Pods_TinyInsta.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C90ED48C22A1138C00F0D2F3 = {
 			isa = PBXGroup;
 			children = (
 				C90ED49722A1138C00F0D2F3 /* TinyInsta */,
 				C90ED49622A1138C00F0D2F3 /* Products */,
+				158FA94340CCA2F52178FA47 /* Pods */,
+				2608131D9D6E423BDF6E5BEB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,9 +93,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C90ED4A422A1138C00F0D2F3 /* Build configuration list for PBXNativeTarget "TinyInsta" */;
 			buildPhases = (
+				30EB18A190CEC044537DADA1 /* [CP] Check Pods Manifest.lock */,
 				C90ED49122A1138C00F0D2F3 /* Sources */,
 				C90ED49222A1138C00F0D2F3 /* Frameworks */,
 				C90ED49322A1138C00F0D2F3 /* Resources */,
+				D4C9C59CC7DDC230835D2C05 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,6 +152,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		30EB18A190CEC044537DADA1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TinyInsta-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4C9C59CC7DDC230835D2C05 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TinyInsta/Pods-TinyInsta-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/TinyConstraints/TinyConstraints.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TinyConstraints.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TinyInsta/Pods-TinyInsta-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C90ED49122A1138C00F0D2F3 /* Sources */ = {
@@ -268,6 +342,7 @@
 		};
 		C90ED4A522A1138C00F0D2F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC1EEF9526F659D8E5E8AE2D /* Pods-TinyInsta.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +361,7 @@
 		};
 		C90ED4A622A1138C00F0D2F3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DEBD7805F26AAB8493587F3 /* Pods-TinyInsta.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
